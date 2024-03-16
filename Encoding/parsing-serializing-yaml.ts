@@ -5,7 +5,7 @@ baz:
   - qux
   - quux
 `;
-const data = parse(text);
+const data = parse(text) as { foo: string, baz: string[] };
 console.log(data.foo);
 console.log(data.baz.length);
 const obj = {
